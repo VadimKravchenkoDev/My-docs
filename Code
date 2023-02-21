@@ -1,0 +1,33 @@
+bindingClass.button2.setOnClickListener {
+
+   val a : String = bindingClass.editText2.getText().toString()
+
+   if (a=="Сергей") {
+       bindingClass.textView3.text = "Ваша зарплата 2000$"
+   bindingClass.textView3.visibility = View.VISIBLE}
+       else if (a=="Вадим"){
+       bindingClass.textView3.text = "Ваша зарплата 5000$"
+       bindingClass.textView3.visibility = View.VISIBLE}
+       else if (a=="Андрей") {
+       bindingClass.textView3.text = "Ваша зарплата 50$"
+   bindingClass.textView3.visibility = View.VISIBLE}
+   }
+Реализация задания преподавателя
+
+val с = bindingClass.editText2.text.toString()
+
+when (с) {
+
+   "Андрей" -> {
+       bindingClass.textView4.visibility = View.VISIBLE
+       bindingClass.textView4.text = "60 дол"
+   }
+   "Сергей" -> {
+       bindingClass.textView4.visibility = View.VISIBLE
+       bindingClass.textView4.text = "100 дол"
+   }
+
+   else -> {
+       bindingClass.textView4.visibility = View.VISIBLE
+       bindingClass.textView4.text = "Не найден"
+   }
