@@ -31,3 +31,5 @@ when (с) {
        bindingClass.textView4.visibility = View.VISIBLE
        bindingClass.textView4.text = "Не найден"
    }
+
+proverka
