@@ -39,6 +39,10 @@ git branch                  - название ветки гита
 
 git branch -m main          - переименовать ветку или создать новую, если писать без -м
 
+git branch -m master development - переименовать локальную ветку "master" в "development
+
+git push -u origin development:main - Теперь сообщите удаленному репозиторию о переименовании
+
 git branch -d <branch name> - удаление ветки
 
 git checkout -b another-feature - создание новой ветки и перемещение в нее
